@@ -223,9 +223,9 @@
     
     <script>
         
-        $.get("info.txt", function(data){
-                console.log(data);
-              });
+        $.ajax("info.txt").done(funtion(data){
+          console.log(data);
+        });
         
         $(document).ready(function(){
             $('#main-img').addClass('animate');
@@ -247,46 +247,3 @@
     
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
