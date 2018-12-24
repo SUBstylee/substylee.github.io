@@ -223,9 +223,11 @@
     
     <script>
         
-        $.ajax("info.txt").done(function(data){
+        $.ajax("inf.txt").done(function(data){
           console.log(data);
-        });
+        }).fail(funtion(){
+                  console.log("could not get data");
+                });
         
         $(document).ready(function(){
             $('#main-img').addClass('animate');
